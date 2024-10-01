@@ -1,27 +1,21 @@
-from math import sqrt
+'''
+Ceci est le fichier principal main.py
+'''
 
-#### Fonction secondaire
-
-
-def isprime(p):
-
-    # votre code ici
-
-    pass
+from primes import isprime
 
 #### Fonction principale
-
-
 def main():
-
-    # vos appels à la fonction secondaire ici
+    """
+    Fonction principale qui affiche les nombres premiers de 0 à 99.
+    """
+    isprime(8)
 
     for n in range(100):
         if isprime(n):
             print(n, end=", ")
-
     print()
 
-
 if __name__ == "__main__":
+    help(main)
     main()
